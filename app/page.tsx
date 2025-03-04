@@ -51,13 +51,13 @@ export default function Portfolio() {
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
             <div className="flex items-center space-x-1">
-              <Link href="https://github.com" target="_blank" rel="noreferrer">
+              <Link href="https://github.com/imammuhtadi" target="_blank" rel="noreferrer">
                 <div className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground h-10 w-10">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </div>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <Link href="https://www.linkedin.com/in/imammuhtadi" target="_blank" rel="noreferrer">
                 <div className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background hover:bg-accent hover:text-accent-foreground h-10 w-10">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
@@ -551,14 +551,14 @@ export default function Portfolio() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Github className="h-5 w-5" />
-                    <Link href="https://github.com" className="hover:underline" target="_blank" rel="noreferrer">
-                      github.com/flutterdev
+                    <Link href="https://github.com/imammuhtadi" className="hover:underline" target="_blank" rel="noreferrer">
+                      github.com/imammuhtadi
                     </Link>
                   </div>
                   <div className="flex items-center gap-2">
                     <Linkedin className="h-5 w-5" />
-                    <Link href="https://linkedin.com" className="hover:underline" target="_blank" rel="noreferrer">
-                      linkedin.com/in/flutterdev
+                    <Link href="https://www.linkedin.com/in/imammuhtadi/" className="hover:underline" target="_blank" rel="noreferrer">
+                      linkedin.com/in/imammuhtadi
                     </Link>
                   </div>
                 </div>
