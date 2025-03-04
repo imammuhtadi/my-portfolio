@@ -547,7 +547,7 @@ export default function Portfolio() {
                 <div className="mt-4 grid gap-4">
                   <div className="flex items-center gap-2">
                     <Mail className="h-5 w-5" />
-                    <span>contact@flutterdev.com</span>
+                    <span>muhtadiimam05@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Github className="h-5 w-5" />
