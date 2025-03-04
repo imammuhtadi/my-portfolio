@@ -69,7 +69,7 @@ export default function Portfolio() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* Hero Section
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -106,7 +106,7 @@ export default function Portfolio() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* About Section */}
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
@@ -115,7 +115,7 @@ export default function Portfolio() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'm a passionate Flutter developer with expertise in creating cross-platform applications. With a
+                  Hey there! I'm Muhtadi, a passionate Flutter developer with expertise in creating cross-platform applications. With a
                   strong foundation in Dart and a keen eye for UI/UX design, I build performant and beautiful
                   applications that work seamlessly across multiple platforms.
                 </p>
