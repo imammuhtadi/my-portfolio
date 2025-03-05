@@ -20,7 +20,7 @@ export default function Portfolio() {
                 height={36}
                 className="rounded-md"
               />
-              <span className="inline-block font-bold">FlutterDev</span>
+              <span className="inline-block font-bold">Muhtadi</span>
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link
