@@ -344,15 +344,14 @@ export default function Portfolio() {
                   />
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">TravelBuddy</CardTitle>
+                  <CardTitle className="text-xl font-bold">Tracegrid Mobile</CardTitle>
                   <CardDescription className="mt-2 line-clamp-3">
-                    A travel companion app featuring itinerary planning, offline maps, expense tracking, and photo
-                    journaling. Implements Flutter's geolocation and local storage capabilities.
+                    TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions.
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-between p-6 pt-0">
                   <div className="flex space-x-2">
-                    <Link href="https://play.google.com" target="_blank" rel="noreferrer">
+                    <Link href="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
                         {/* <Image
                           src="/placeholder.svg?height=20&width=20"
@@ -364,7 +363,7 @@ export default function Portfolio() {
                         Play Store
                       </Button>
                     </Link>
-                    <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
+                    <Link href="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
                         {/* <Image
                           src="/placeholder.svg?height=20&width=20"
