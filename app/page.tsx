@@ -297,27 +297,26 @@ export default function Portfolio() {
                   />
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">MealMaster</CardTitle>
+                  <CardTitle className="text-xl font-bold">Charo - AI Dating Assistant</CardTitle>
                   <CardDescription className="mt-2 line-clamp-3">
-                    A recipe and meal planning app with shopping list generation, dietary preferences, and ingredient
-                    scanning. Utilizes Flutter's camera integration and local database.
+                  Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots.
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-between p-6 pt-0">
                   <div className="flex space-x-2">
-                    <Link href="https://play.google.com" target="_blank" rel="noreferrer">
+                    {/* <Link href="https://play.google.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        {/* <Image
+                        <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        /> */}
+                        />
                         Play Store
                       </Button>
-                    </Link>
-                    <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
+                    </Link> */}
+                    <Link href="https://apps.apple.com/id/app/charo/id6670252822" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
                         {/* <Image
                           src="/placeholder.svg?height=20&width=20"
