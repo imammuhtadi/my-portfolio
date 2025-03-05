@@ -289,7 +289,7 @@ export default function Portfolio() {
               <Card className="overflow-hidden">
                 <CardHeader className="p-0">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
                     width={500}
                     height={300}
                     alt="Project 2"
