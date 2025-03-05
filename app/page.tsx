@@ -259,25 +259,25 @@ export default function Portfolio() {
                   <div className="flex space-x-2">
                     <Link href="https://play.google.com/store/apps/details?id=id.co.jogjalowker" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        />
+                        /> */}
                         Play Store
                       </Button>
                     </Link>
                     <Link href="https://apps.apple.com/id/app/jogjalowker/id1451701919" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="App Store"
                           className="mr-2"
-                        />
+                        /> */}
                         App Store
                       </Button>
                     </Link>
@@ -307,25 +307,25 @@ export default function Portfolio() {
                   <div className="flex space-x-2">
                     <Link href="https://play.google.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        />
+                        /> */}
                         Play Store
                       </Button>
                     </Link>
                     <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="App Store"
                           className="mr-2"
-                        />
+                        /> */}
                         App Store
                       </Button>
                     </Link>
@@ -355,25 +355,25 @@ export default function Portfolio() {
                   <div className="flex space-x-2">
                     <Link href="https://play.google.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        />
+                        /> */}
                         Play Store
                       </Button>
                     </Link>
                     <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="App Store"
                           className="mr-2"
-                        />
+                        /> */}
                         App Store
                       </Button>
                     </Link>
@@ -403,25 +403,25 @@ export default function Portfolio() {
                   <div className="flex space-x-2">
                     <Link href="https://play.google.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        />
+                        /> */}
                         Play Store
                       </Button>
                     </Link>
                     <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="App Store"
                           className="mr-2"
-                        />
+                        /> */}
                         App Store
                       </Button>
                     </Link>
@@ -451,25 +451,25 @@ export default function Portfolio() {
                   <div className="flex space-x-2">
                     <Link href="https://play.google.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        />
+                        /> */}
                         Play Store
                       </Button>
                     </Link>
                     <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="App Store"
                           className="mr-2"
-                        />
+                        /> */}
                         App Store
                       </Button>
                     </Link>
@@ -499,25 +499,25 @@ export default function Portfolio() {
                   <div className="flex space-x-2">
                     <Link href="https://play.google.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="Play Store"
                           className="mr-2"
-                        />
+                        /> */}
                         Play Store
                       </Button>
                     </Link>
                     <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
-                        <Image
+                        {/* <Image
                           src="/placeholder.svg?height=20&width=20"
                           width={20}
                           height={20}
                           alt="App Store"
                           className="mr-2"
-                        />
+                        /> */}
                         App Store
                       </Button>
                     </Link>
