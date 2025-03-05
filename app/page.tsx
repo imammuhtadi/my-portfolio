@@ -250,15 +250,14 @@ export default function Portfolio() {
                   />
                 </CardHeader>
                 <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">FitTrack Pro</CardTitle>
+                  <CardTitle className="text-xl font-bold">Jogjalowker</CardTitle>
                   <CardDescription className="mt-2 line-clamp-3">
-                    A comprehensive fitness tracking app with workout plans, nutrition tracking, and progress analytics.
-                    Built with Flutter and Firebase for real-time data synchronization.
+                  JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies.
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="flex justify-between p-6 pt-0">
                   <div className="flex space-x-2">
-                    <Link href="https://play.google.com" target="_blank" rel="noreferrer">
+                    <Link href="https://play.google.com/store/apps/details?id=id.co.jogjalowker" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
                         <Image
                           src="/placeholder.svg?height=20&width=20"
@@ -270,7 +269,7 @@ export default function Portfolio() {
                         Play Store
                       </Button>
                     </Link>
-                    <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
+                    <Link href="https://apps.apple.com/id/app/jogjalowker/id1451701919" target="_blank" rel="noreferrer">
                       <Button size="sm" variant="outline">
                         <Image
                           src="/placeholder.svg?height=20&width=20"
