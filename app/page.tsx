@@ -216,7 +216,7 @@ export default function Portfolio() {
                 </ul>
               </div>
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="https://storage.googleapis.com/cms-storage-bucket/847ae81f5430402216fd.svg"
                 width={500}
                 height={500}
                 alt="Flutter Framework"
