@@ -135,7 +135,7 @@ export default function Portfolio() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Experience</h3>
                       <p className="text-muted-foreground">
-                        5+ years of experience in mobile app development with a focus on Flutter for the last 3 years.
+                        8+ years of experience in mobile app development with a focus on Flutter for the last 4 years.
                       </p>
                     </div>
                   </li>
@@ -151,7 +151,7 @@ export default function Portfolio() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Skills</h3>
                       <p className="text-muted-foreground">
-                        Flutter, Dart, Firebase, RESTful APIs, State Management (Provider, Bloc, Riverpod), CI/CD, Git
+                        Flutter, Dart, Firebase, Supabase, RESTful APIs, State Management (Provider, Bloc, Riverpod), CI/CD, Git
                       </p>
                     </div>
                   </li>
