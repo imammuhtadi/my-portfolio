@@ -336,7 +336,7 @@ export default function Portfolio() {
               <Card className="overflow-hidden">
                 <CardHeader className="p-0">
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
                     width={500}
                     height={300}
                     alt="Project 3"
