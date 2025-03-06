@@ -155,6 +155,14 @@ export default function Portfolio() {
                       </p>
                     </div>
                   </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <h3 className="text-xl font-bold">Additional Skills</h3>
+                      <p className="text-muted-foreground">
+                        Backend Development: Express.js, Node.js, PostgreSQL, MongoDB, RESTful API design
+                      </p>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
