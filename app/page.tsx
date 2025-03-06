@@ -123,7 +123,8 @@ export default function Portfolio() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                // src="/placeholder.svg?height=400&width=400"
+                src="https://media.licdn.com/dms/image/v2/C4E03AQH2VmBUAGXIEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517639767087?e=1746662400&v=beta&t=8waGgTXSWEnk3kNd4xgT98zcBmbVq_LnSRMgtmz1cYw"
                 width={400}
                 height={400}
                 alt="Developer Profile"
