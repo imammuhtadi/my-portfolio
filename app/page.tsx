@@ -2,8 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Mail, Github, Linkedin, ChevronRight } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "../components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
+import ProjectCard from "../components/project-card"
 
 export default function Portfolio() {
   return (
@@ -250,145 +251,33 @@ export default function Portfolio() {
             </div>
             <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
               {/* Project 1 */}
-              <Card className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
-                    width={500}
-                    height={300}
-                    alt="Project 1"
-                    className="aspect-video object-cover"
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">Jogjalowker</CardTitle>
-                  <CardDescription className="mt-2 line-clamp-3">
-                  JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between p-6 pt-0">
-                  <div className="flex space-x-2">
-                    <Link href="https://play.google.com/store/apps/details?id=id.co.jogjalowker" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="Play Store"
-                          className="mr-2"
-                        /> */}
-                        Play Store
-                      </Button>
-                    </Link>
-                    <Link href="https://apps.apple.com/id/app/jogjalowker/id1451701919" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="App Store"
-                          className="mr-2"
-                        /> */}
-                        App Store
-                      </Button>
-                    </Link>
-                  </div>
-                </CardFooter>
-              </Card>
+              <ProjectCard
+                id="jogjalowker"
+                image="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
+                title="Jogjalowker"
+                description="JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies."
+                playStoreUrl="https://play.google.com/store/apps/details?id=id.co.jogjalowker"
+                appStoreUrl="https://apps.apple.com/id/app/jogjalowker/id1451701919"
+              />
 
               {/* Project 2 */}
-              <Card className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
-                    width={500}
-                    height={300}
-                    alt="Project 2"
-                    className="aspect-video object-cover"
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">Charo - AI Dating Assistant</CardTitle>
-                  <CardDescription className="mt-2 line-clamp-3">
-                  Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between p-6 pt-0">
-                  <div className="flex space-x-2">
-                    {/* <Link href="https://play.google.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="Play Store"
-                          className="mr-2"
-                        />
-                        Play Store
-                      </Button>
-                    </Link> */}
-                    <Link href="https://apps.apple.com/id/app/charo/id6670252822" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="App Store"
-                          className="mr-2"
-                        /> */}
-                        App Store
-                      </Button>
-                    </Link>
-                  </div>
-                </CardFooter>
-              </Card>
+              <ProjectCard
+                id="charo"
+                image="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
+                title="Charo - AI Dating Assistant"
+                description="Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots."
+                appStoreUrl="https://apps.apple.com/id/app/charo/id6670252822"
+              />
 
               {/* Project 3 */}
-              <Card className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
-                    width={500}
-                    height={300}
-                    alt="Project 3"
-                    className="aspect-video object-cover"
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">Tracegrid Mobile</CardTitle>
-                  <CardDescription className="mt-2 line-clamp-3">
-                    TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between p-6 pt-0">
-                  <div className="flex space-x-2">
-                    <Link href="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="Play Store"
-                          className="mr-2"
-                        /> */}
-                        Play Store
-                      </Button>
-                    </Link>
-                    <Link href="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="App Store"
-                          className="mr-2"
-                        /> */}
-                        App Store
-                      </Button>
-                    </Link>
-                  </div>
-                </CardFooter>
-              </Card>
+              <ProjectCard
+                id="tracegrid"
+                image="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
+                title="Tracegrid Mobile"
+                description="TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions."
+                playStoreUrl="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en"
+                appStoreUrl="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id"
+              />
 
               {/* Project 4 */}
               <Card className="overflow-hidden">
@@ -628,7 +517,7 @@ export default function Portfolio() {
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Flutter Developer. All rights reserved.
+            {new Date().getFullYear()} Flutter Developer. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="https://github.com/imammuhtadi" target="_blank" rel="noreferrer">
@@ -649,4 +538,3 @@ export default function Portfolio() {
     </div>
   )
 }
-
