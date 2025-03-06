@@ -215,13 +215,15 @@ export default function Portfolio() {
                   </li>
                 </ul>
               </div>
-              <Image
-                src="https://storage.googleapis.com/cms-storage-bucket/847ae81f5430402216fd.svg"
-                width={500}
-                height={500}
-                alt="Flutter Framework"
-                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
-              />
+              <div className="bg-[#041e3c] py-[70px] px-[70px] rounded-xl">
+                <Image
+                  src="https://storage.googleapis.com/cms-storage-bucket/67187dff9313e2831a8c.svg"
+                  width={500}
+                  height={500}
+                  alt="Flutter Framework"
+                  className="mx-auto aspect-square overflow-hidden rounded-xl object-contain sm:w-full lg:order-last"
+                />
+              </div>
             </div>
           </div>
         </section>
