@@ -114,8 +114,8 @@ export default function Portfolio() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hey there! I'm Muhtadi, a passionate Mobile App Developer with expertise in creating iOS and Android applications. With a
+                <p className="pt-2 max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Hey there! I'm Muhtadi, a passionate <b>Mobile App Developer</b> with expertise in creating <b>iOS and Android applications</b>. With a
                   strong foundation in Flutter and a keen eye for UI/UX design, I build performant and beautiful
                   applications that work seamlessly across multiple platforms.
                 </p>
