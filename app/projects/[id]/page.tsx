@@ -81,6 +81,20 @@ const projects = [
       "Guided exercises"
     ],
     technologies: ["Flutter", "Provider", "Local Storage", "REST API"]
+  },
+  {
+    id: "hyppe",
+    title: "Hyppe",
+    description: "Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package.",
+    image: "https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw",
+    playStore: "https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en",
+    appStore: "https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684",
+    features: [
+      "Social Media",
+      "AR Features",
+      "Photo & Video Processing"
+    ],
+    technologies: ["Flutter", "Photo & Video Processing", "AR", "REST API"]
   }
 ];
 
@@ -95,7 +109,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           <Link href="/#projects">
             <Button className="mt-4">
               <ChevronLeft className="mr-2 h-4 w-4" />
-              Back to Projects
+              Back to Home
             </Button>
           </Link>
         </div>
@@ -108,7 +122,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
       <Link href="/#projects">
         <Button variant="outline" className="mb-8">
           <ChevronLeft className="mr-2 h-4 w-4" />
-          Back to Projects
+          Back to Home
         </Button>
       </Link>
       

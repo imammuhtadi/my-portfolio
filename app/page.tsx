@@ -16,7 +16,7 @@ export default function Portfolio() {
           <div className="flex gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/placeholder.svg?height=36&width=36"
+                src="https://media.licdn.com/dms/image/v2/C4E03AQH2VmBUAGXIEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517639767087?e=1746662400&v=beta&t=8waGgTXSWEnk3kNd4xgT98zcBmbVq_LnSRMgtmz1cYw"
                 alt="Flutter Logo"
                 width={36}
                 height={36}
@@ -125,7 +125,6 @@ export default function Portfolio() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <Image
-                // src="/placeholder.svg?height=400&width=400"
                 src="https://media.licdn.com/dms/image/v2/C4E03AQH2VmBUAGXIEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517639767087?e=1746662400&v=beta&t=8waGgTXSWEnk3kNd4xgT98zcBmbVq_LnSRMgtmz1cYw"
                 width={400}
                 height={400}
@@ -301,52 +300,15 @@ export default function Portfolio() {
               />
 
               {/* Project 6 */}
-              <Card className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src="/placeholder.svg?height=300&width=500"
-                    width={500}
-                    height={300}
-                    alt="Project 6"
-                    className="aspect-video object-cover"
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">WeatherNow</CardTitle>
-                  <CardDescription className="mt-2 line-clamp-3">
-                    A weather forecasting app with real-time updates, location-based forecasts, and weather alerts.
-                    Demonstrates Flutter's API integration and dynamic UI capabilities.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between p-6 pt-0">
-                  <div className="flex space-x-2">
-                    <Link href="https://play.google.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="Play Store"
-                          className="mr-2"
-                        /> */}
-                        Play Store
-                      </Button>
-                    </Link>
-                    <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="App Store"
-                          className="mr-2"
-                        /> */}
-                        App Store
-                      </Button>
-                    </Link>
-                  </div>
-                </CardFooter>
-              </Card>
+              <ProjectCard
+                id="hyppe"
+                image="https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw"
+                title="Hyppe"
+                description="Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package."
+                playStoreUrl="https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en"
+                appStoreUrl="https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684"
+              />
+
             </div>
           </div>
         </section>
