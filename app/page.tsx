@@ -115,8 +115,8 @@ export default function Portfolio() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hey there! I'm Muhtadi, a passionate Flutter developer with expertise in creating cross-platform applications. With a
-                  strong foundation in Dart and a keen eye for UI/UX design, I build performant and beautiful
+                  Hey there! I'm Muhtadi, a passionate Mobile App Developer with expertise in creating iOS and Android applications. With a
+                  strong foundation in Flutter and a keen eye for UI/UX design, I build performant and beautiful
                   applications that work seamlessly across multiple platforms.
                 </p>
               </div>
