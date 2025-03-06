@@ -280,100 +280,24 @@ export default function Portfolio() {
               />
 
               {/* Project 4 */}
-              <Card className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src="/placeholder.svg?height=300&width=500"
-                    width={500}
-                    height={300}
-                    alt="Project 4"
-                    className="aspect-video object-cover"
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">TaskFlow</CardTitle>
-                  <CardDescription className="mt-2 line-clamp-3">
-                    A productivity app with task management, time tracking, and habit building features. Uses Flutter's
-                    notification system and state management with Bloc pattern.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between p-6 pt-0">
-                  <div className="flex space-x-2">
-                    <Link href="https://play.google.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="Play Store"
-                          className="mr-2"
-                        /> */}
-                        Play Store
-                      </Button>
-                    </Link>
-                    <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="App Store"
-                          className="mr-2"
-                        /> */}
-                        App Store
-                      </Button>
-                    </Link>
-                  </div>
-                </CardFooter>
-              </Card>
+              <ProjectCard
+                id="btp"
+                image="https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw"
+                title="BTP Ranger"
+                description="BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package"
+                playStoreUrl="https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en"
+                appStoreUrl="https://apps.apple.com/us/app/btp-ranger/id1546573869"
+              />
 
               {/* Project 5 */}
-              <Card className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src="/placeholder.svg?height=300&width=500"
-                    width={500}
-                    height={300}
-                    alt="Project 5"
-                    className="aspect-video object-cover"
-                  />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="text-xl font-bold">FinanceTracker</CardTitle>
-                  <CardDescription className="mt-2 line-clamp-3">
-                    A personal finance management app with expense tracking, budget planning, and financial insights.
-                    Features secure authentication and data encryption using Flutter's security packages.
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="flex justify-between p-6 pt-0">
-                  <div className="flex space-x-2">
-                    <Link href="https://play.google.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="Play Store"
-                          className="mr-2"
-                        /> */}
-                        Play Store
-                      </Button>
-                    </Link>
-                    <Link href="https://apps.apple.com" target="_blank" rel="noreferrer">
-                      <Button size="sm" variant="outline">
-                        {/* <Image
-                          src="/placeholder.svg?height=20&width=20"
-                          width={20}
-                          height={20}
-                          alt="App Store"
-                          className="mr-2"
-                        /> */}
-                        App Store
-                      </Button>
-                    </Link>
-                  </div>
-                </CardFooter>
-              </Card>
+              <ProjectCard
+                id="gamaaims"
+                image="https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw"
+                title="Gama AIMS"
+                description="GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance"
+                playStoreUrl="https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en"
+                appStoreUrl="https://apps.apple.com/id/app/gama-aims/id1616273280"
+              />
 
               {/* Project 6 */}
               <Card className="overflow-hidden">
@@ -517,7 +441,7 @@ export default function Portfolio() {
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            {new Date().getFullYear()} Flutter Developer. All rights reserved.
+            © {new Date().getFullYear()} Flutter Developer. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="https://github.com/imammuhtadi" target="_blank" rel="noreferrer">
@@ -538,3 +462,4 @@ export default function Portfolio() {
     </div>
   )
 }
+

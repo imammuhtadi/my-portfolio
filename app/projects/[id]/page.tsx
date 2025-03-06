@@ -49,6 +49,38 @@ const projects = [
       "Route optimization"
     ],
     technologies: ["Flutter", "Google Maps", "WebSocket", "REST API"]
+  },
+  {
+    id: "btp",
+    title: "BTP Ranger",
+    description: "BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package",
+    image: "https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw",
+    playStore: "https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en",
+    appStore: "https://apps.apple.com/us/app/btp-ranger/id1546573869",
+    features: [
+      "Real-time activity monitoring",
+      "Parent-teacher communication",
+      "Attendance tracking",
+      "Event notifications",
+      "Progress reports"
+    ],
+    technologies: ["Flutter", "Firebase", "Provider", "Push Notifications"]
+  },
+  {
+    id: "gamaaims",
+    title: "Gama AIMS",
+    description: "GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance",
+    image: "https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw",
+    playStore: "https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en",
+    appStore: "https://apps.apple.com/id/app/gama-aims/id1616273280",
+    features: [
+      "Mental health assessments",
+      "Intervention strategies",
+      "Progress tracking",
+      "Resource library",
+      "Guided exercises"
+    ],
+    technologies: ["Flutter", "Provider", "Local Storage", "REST API"]
   }
 ];
 
@@ -119,15 +151,21 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           </div>
           
           <div className="flex gap-4 pt-4">
-            {project.playStore && (
-              <Link href={project.playStore} target="_blank" rel="noreferrer">
-                <Button>Play Store</Button>
-              </Link>
-            )}
-            {project.appStore && (
-              <Link href={project.appStore} target="_blank" rel="noreferrer">
-                <Button>App Store</Button>
-              </Link>
+            {(project.playStore || project.appStore) ? (
+              <>
+                {project.playStore && (
+                  <Link href={project.playStore} target="_blank" rel="noreferrer">
+                    <Button>Play Store</Button>
+                  </Link>
+                )}
+                {project.appStore && (
+                  <Link href={project.appStore} target="_blank" rel="noreferrer">
+                    <Button>App Store</Button>
+                  </Link>
+                )}
+              </>
+            ) : (
+              <p className="text-muted-foreground italic">App coming soon to app stores</p>
             )}
           </div>
         </div>
