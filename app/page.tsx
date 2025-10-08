@@ -15,14 +15,7 @@ export default function Portfolio() {
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="https://media.licdn.com/dms/image/v2/C4E03AQH2VmBUAGXIEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517639767087?e=1746662400&v=beta&t=8waGgTXSWEnk3kNd4xgT98zcBmbVq_LnSRMgtmz1cYw"
-                alt="Flutter Logo"
-                width={36}
-                height={36}
-                className="rounded-md"
-              />
-              <span className="inline-block font-bold">Muhtadi</span>
+              <span className="inline-block font-bold">muhtadi.dev</span>
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link
@@ -125,7 +118,7 @@ export default function Portfolio() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <Image
-                src="https://media.licdn.com/dms/image/v2/C4E03AQH2VmBUAGXIEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517639767087?e=1746662400&v=beta&t=8waGgTXSWEnk3kNd4xgT98zcBmbVq_LnSRMgtmz1cYw"
+                src="/my-photo.jpeg"
                 width={400}
                 height={400}
                 alt="Developer Profile"
