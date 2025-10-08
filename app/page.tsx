@@ -1,13 +1,18 @@
+'use client'
+
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Mail, Github, Linkedin, ChevronRight } from "lucide-react"
 
 import { Button } from "../components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import ProjectCard from "../components/project-card"
 import ContactForm from "../components/contact-form"
 
 export default function Portfolio() {
+  const [activeTab, setActiveTab] = useState("all")
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -25,10 +30,10 @@ export default function Portfolio() {
                 About
               </Link>
               <Link
-                href="#flutter"
+                href="#technologies"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
-                Flutter
+                Technologies
               </Link>
               <Link
                 href="#projects"
@@ -110,9 +115,9 @@ export default function Portfolio() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
                 <p className="pt-2 max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hey there! I'm Muhtadi, a passionate <b>Mobile App Developer</b> with expertise in creating <b>iOS and Android applications</b>. With a
-                  strong foundation in Flutter and a keen eye for UI/UX design, I build performant and beautiful
-                  applications that work seamlessly across multiple platforms.
+                  Hey there! I'm Muhtadi, a passionate <b>Fullstack Developer</b> with expertise in creating <b>web and mobile applications</b>. With a
+                  strong foundation in modern web technologies and mobile development, I build performant and beautiful
+                  applications that deliver exceptional user experiences across all platforms.
                 </p>
               </div>
             </div>
@@ -130,7 +135,7 @@ export default function Portfolio() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Experience</h3>
                       <p className="text-muted-foreground">
-                        8+ years of experience in mobile app development with a focus on Flutter for the last 4 years.
+                        8+ years of experience in fullstack development, specializing in mobile apps (Flutter) and modern web applications (React, Next.js).
                       </p>
                     </div>
                   </li>
@@ -138,23 +143,23 @@ export default function Portfolio() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Education</h3>
                       <p className="text-muted-foreground">
-                        Bachelor's degree in Computer Science with specialization in Mobile Application Development.
+                        Bachelor's degree in Computer Science with specialization in Software Engineering and Application Development.
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Skills</h3>
+                      <h3 className="text-xl font-bold">Frontend Skills</h3>
                       <p className="text-muted-foreground">
-                        Flutter, Dart, Firebase, Supabase, RESTful APIs, State Management (Provider, Bloc, Riverpod), CI/CD, Git
+                        React, Next.js, TypeScript, Flutter, Dart, Tailwind CSS, State Management (Redux, Zustand, Provider, Bloc, Riverpod)
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold">Additional Skills</h3>
+                      <h3 className="text-xl font-bold">Backend Skills</h3>
                       <p className="text-muted-foreground">
-                        Backend Development: Express.js, Node.js, PostgreSQL, MongoDB, RESTful API design
+                        Node.js, Express.js, PostgreSQL, MongoDB, Firebase, Supabase, RESTful APIs, GraphQL, CI/CD, Docker, Git
                       </p>
                     </div>
                   </li>
@@ -164,68 +169,84 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Flutter Section */}
-        <section id="flutter" className="w-full py-12 md:py-24 lg:py-32">
+        {/* Technologies Section */}
+        <section id="technologies" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What is Flutter?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Technologies I Use</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web,
-                  and desktop from a single codebase.
+                  I work with modern technologies to build scalable, performant applications across web and mobile platforms.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
-                <h3 className="text-2xl font-bold">What Flutter Can Do</h3>
+                <h3 className="text-2xl font-bold">What I Can Build</h3>
                 <ul className="grid gap-6">
                   <li>
                     <div className="grid gap-1">
-                      <h4 className="text-xl font-bold">Cross-Platform Development</h4>
+                      <h4 className="text-xl font-bold">Web Applications</h4>
                       <p className="text-muted-foreground">
-                        Build apps for iOS, Android, web, Windows, macOS, and Linux from a single codebase, reducing
-                        development time and costs.
+                        Modern, responsive web applications using React, Next.js, and TypeScript with server-side rendering,
+                        optimized performance, and excellent SEO.
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h4 className="text-xl font-bold">Fast Development</h4>
+                      <h4 className="text-xl font-bold">Mobile Applications</h4>
                       <p className="text-muted-foreground">
-                        Hot reload feature allows you to see changes instantly without losing the current state of the
-                        app, making development faster and more efficient.
+                        Cross-platform mobile apps with Flutter for iOS and Android, delivering native performance and
+                        beautiful user interfaces from a single codebase.
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h4 className="text-xl font-bold">Expressive UI</h4>
+                      <h4 className="text-xl font-bold">Backend Systems</h4>
                       <p className="text-muted-foreground">
-                        Create beautiful, custom user interfaces with Flutter's rich set of widgets that follow Material
-                        Design and Cupertino (iOS) guidelines.
+                        Scalable backend services with Node.js, Express, and databases like PostgreSQL and MongoDB,
+                        including RESTful APIs and real-time features.
                       </p>
                     </div>
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h4 className="text-xl font-bold">Native Performance</h4>
+                      <h4 className="text-xl font-bold">Full-Stack Solutions</h4>
                       <p className="text-muted-foreground">
-                        Flutter compiles to native ARM code, ensuring high performance on both iOS and Android
-                        platforms.
+                        End-to-end application development from database design to deployment, with modern DevOps
+                        practices and CI/CD pipelines.
                       </p>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="bg-[#041e3c] py-[70px] px-[70px] rounded-xl">
-                <Image
-                  src="https://storage.googleapis.com/cms-storage-bucket/67187dff9313e2831a8c.svg"
-                  width={500}
-                  height={500}
-                  alt="Flutter Framework"
-                  className="mx-auto aspect-square overflow-hidden rounded-xl object-contain sm:w-full lg:order-last"
-                />
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-[#61DAFB] bg-opacity-10 p-8 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#61DAFB]">React</div>
+                    <div className="text-sm text-muted-foreground mt-2">Web Development</div>
+                  </div>
+                </div>
+                <div className="bg-[#000000] bg-opacity-10 p-8 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold">Next.js</div>
+                    <div className="text-sm text-muted-foreground mt-2">React Framework</div>
+                  </div>
+                </div>
+                <div className="bg-[#041e3c] p-8 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#02569B]">Flutter</div>
+                    <div className="text-sm text-muted-foreground mt-2">Mobile Apps</div>
+                  </div>
+                </div>
+                <div className="bg-[#339933] bg-opacity-10 p-8 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#339933]">Node.js</div>
+                    <div className="text-sm text-muted-foreground mt-2">Backend</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -238,71 +259,161 @@ export default function Portfolio() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">My Projects</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Check out some of the Flutter applications I've developed for mobile platforms.
+                  Check out some of the web and mobile applications I've developed.
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
-              {/* Project 1 */}
-              <ProjectCard
-                id="jogjalowker"
-                image="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
-                title="Jogjalowker"
-                description="JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies."
-                playStoreUrl="https://play.google.com/store/apps/details?id=id.co.jogjalowker"
-                appStoreUrl="https://apps.apple.com/id/app/jogjalowker/id1451701919"
-              />
+            <Tabs defaultValue="all" className="w-full py-12" onValueChange={setActiveTab}>
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
+                <TabsTrigger value="all">All</TabsTrigger>
+                <TabsTrigger value="mobile">Mobile</TabsTrigger>
+                <TabsTrigger value="web">Web</TabsTrigger>
+              </TabsList>
+              <TabsContent value="all" className="mt-8">
+                <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  {/* Mobile Project 1 */}
+                  <ProjectCard
+                    id="jogjalowker"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
+                    title="Jogjalowker"
+                    description="JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies."
+                    playStoreUrl="https://play.google.com/store/apps/details?id=id.co.jogjalowker"
+                    appStoreUrl="https://apps.apple.com/id/app/jogjalowker/id1451701919"
+                  />
 
-              {/* Project 2 */}
-              <ProjectCard
-                id="charo"
-                image="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
-                title="Charo - AI Dating Assistant"
-                description="Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots."
-                appStoreUrl="https://apps.apple.com/id/app/charo/id6670252822"
-              />
+                  {/* Mobile Project 2 */}
+                  <ProjectCard
+                    id="charo"
+                    type="mobile"
+                    image="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
+                    title="Charo - AI Dating Assistant"
+                    description="Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots."
+                    appStoreUrl="https://apps.apple.com/id/app/charo/id6670252822"
+                  />
 
-              {/* Project 3 */}
-              <ProjectCard
-                id="tracegrid"
-                image="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
-                title="Tracegrid Mobile"
-                description="TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions."
-                playStoreUrl="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en"
-                appStoreUrl="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id"
-              />
+                  {/* Mobile Project 3 */}
+                  <ProjectCard
+                    id="tracegrid"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
+                    title="Tracegrid Mobile"
+                    description="TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions."
+                    playStoreUrl="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en"
+                    appStoreUrl="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id"
+                  />
 
-              {/* Project 4 */}
-              <ProjectCard
-                id="btp"
-                image="https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw"
-                title="BTP Ranger"
-                description="BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package"
-                playStoreUrl="https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en"
-                appStoreUrl="https://apps.apple.com/us/app/btp-ranger/id1546573869"
-              />
+                  {/* Mobile Project 4 */}
+                  <ProjectCard
+                    id="btp"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw"
+                    title="BTP Ranger"
+                    description="BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package"
+                    playStoreUrl="https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en"
+                    appStoreUrl="https://apps.apple.com/us/app/btp-ranger/id1546573869"
+                  />
 
-              {/* Project 5 */}
-              <ProjectCard
-                id="gamaaims"
-                image="https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw"
-                title="Gama AIMS"
-                description="GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance"
-                playStoreUrl="https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en"
-                appStoreUrl="https://apps.apple.com/id/app/gama-aims/id1616273280"
-              />
+                  {/* Mobile Project 5 */}
+                  <ProjectCard
+                    id="gamaaims"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw"
+                    title="Gama AIMS"
+                    description="GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance"
+                    playStoreUrl="https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en"
+                    appStoreUrl="https://apps.apple.com/id/app/gama-aims/id1616273280"
+                  />
 
-              {/* Project 6 */}
-              <ProjectCard
-                id="hyppe"
-                image="https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw"
-                title="Hyppe"
-                description="Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package."
-                playStoreUrl="https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en"
-                appStoreUrl="https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684"
-              />
+                  {/* Mobile Project 6 */}
+                  <ProjectCard
+                    id="hyppe"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw"
+                    title="Hyppe"
+                    description="Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package."
+                    playStoreUrl="https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en"
+                    appStoreUrl="https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684"
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value="mobile" className="mt-8">
+                <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  {/* Mobile Project 1 */}
+                  <ProjectCard
+                    id="jogjalowker"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
+                    title="Jogjalowker"
+                    description="JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies."
+                    playStoreUrl="https://play.google.com/store/apps/details?id=id.co.jogjalowker"
+                    appStoreUrl="https://apps.apple.com/id/app/jogjalowker/id1451701919"
+                  />
 
-            </div>
+                  {/* Mobile Project 2 */}
+                  <ProjectCard
+                    id="charo"
+                    type="mobile"
+                    image="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
+                    title="Charo - AI Dating Assistant"
+                    description="Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots."
+                    appStoreUrl="https://apps.apple.com/id/app/charo/id6670252822"
+                  />
+
+                  {/* Mobile Project 3 */}
+                  <ProjectCard
+                    id="tracegrid"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
+                    title="Tracegrid Mobile"
+                    description="TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions."
+                    playStoreUrl="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en"
+                    appStoreUrl="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id"
+                  />
+
+                  {/* Mobile Project 4 */}
+                  <ProjectCard
+                    id="btp"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw"
+                    title="BTP Ranger"
+                    description="BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package"
+                    playStoreUrl="https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en"
+                    appStoreUrl="https://apps.apple.com/us/app/btp-ranger/id1546573869"
+                  />
+
+                  {/* Mobile Project 5 */}
+                  <ProjectCard
+                    id="gamaaims"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw"
+                    title="Gama AIMS"
+                    description="GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance"
+                    playStoreUrl="https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en"
+                    appStoreUrl="https://apps.apple.com/id/app/gama-aims/id1616273280"
+                  />
+
+                  {/* Mobile Project 6 */}
+                  <ProjectCard
+                    id="hyppe"
+                    type="mobile"
+                    image="https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw"
+                    title="Hyppe"
+                    description="Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package."
+                    playStoreUrl="https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en"
+                    appStoreUrl="https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684"
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value="web" className="mt-8">
+                <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  {/* Web projects will be added here */}
+                  <div className="col-span-full text-center py-12">
+                    <p className="text-muted-foreground text-lg">Web projects coming soon...</p>
+                  </div>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
         </section>
 

@@ -11,8 +11,10 @@ interface ProjectCardProps {
   image: string
   title: string
   description: string
+  type: 'mobile' | 'web'
   playStoreUrl?: string
   appStoreUrl?: string
+  webUrl?: string
 }
 
 export default function ProjectCard({
@@ -20,8 +22,10 @@ export default function ProjectCard({
   image,
   title,
   description,
+  type,
   playStoreUrl,
   appStoreUrl,
+  webUrl,
 }: ProjectCardProps) {
   const router = useRouter()
 
@@ -51,28 +55,44 @@ export default function ProjectCard({
         </CardDescription>
       </CardContent>
       <CardFooter className="flex justify-between p-6 pt-0">
-        <div className="flex space-x-2">
-          {playStoreUrl && (
-            <Link
-              href={playStoreUrl}
-              target="_blank"
-              rel="noreferrer"
-              onClick={(e) => handleStoreClick(e, playStoreUrl)}
-            >
-              <Button size="sm" variant="outline">
-                Play Store
-              </Button>
-            </Link>
+        <div className="flex flex-wrap gap-2">
+          {type === 'mobile' && (
+            <>
+              {playStoreUrl && (
+                <Link
+                  href={playStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={(e) => handleStoreClick(e, playStoreUrl)}
+                >
+                  <Button size="sm" variant="outline">
+                    Play Store
+                  </Button>
+                </Link>
+              )}
+              {appStoreUrl && (
+                <Link
+                  href={appStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={(e) => handleStoreClick(e, appStoreUrl)}
+                >
+                  <Button size="sm" variant="outline">
+                    App Store
+                  </Button>
+                </Link>
+              )}
+            </>
           )}
-          {appStoreUrl && (
+          {type === 'web' && webUrl && (
             <Link
-              href={appStoreUrl}
+              href={webUrl}
               target="_blank"
               rel="noreferrer"
-              onClick={(e) => handleStoreClick(e, appStoreUrl)}
+              onClick={(e) => handleStoreClick(e, webUrl)}
             >
               <Button size="sm" variant="outline">
-                App Store
+                Visit Website
               </Button>
             </Link>
           )}
