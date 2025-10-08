@@ -13,6 +13,69 @@ import ContactForm from "../components/contact-form"
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("all")
+  
+  // Define all projects once
+  const allProjects = [
+    {
+      id: "jogjalowker",
+      image: "https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw",
+      title: "Jogjalowker",
+      description: "JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=id.co.jogjalowker",
+      appStoreUrl: "https://apps.apple.com/id/app/jogjalowker/id1451701919",
+      webUrl: "https://www.jogjalowker.co.id/",
+    },
+    {
+      id: "charo",
+      image: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
+      title: "Charo - AI Dating Assistant",
+      description: "Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots.",
+      playStoreUrl: undefined,
+      appStoreUrl: "https://apps.apple.com/id/app/charo/id6670252822",
+      webUrl: undefined,
+    },
+    {
+      id: "tracegrid",
+      image: "https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw",
+      title: "Tracegrid Mobile",
+      description: "TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en",
+      appStoreUrl: "https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id",
+      webUrl: undefined,
+    },
+    {
+      id: "btp",
+      image: "https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw",
+      title: "BTP Ranger",
+      description: "BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en",
+      appStoreUrl: "https://apps.apple.com/us/app/btp-ranger/id1546573869",
+      webUrl: undefined,
+    },
+    {
+      id: "gamaaims",
+      image: "https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw",
+      title: "Gama AIMS",
+      description: "GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en",
+      appStoreUrl: "https://apps.apple.com/id/app/gama-aims/id1616273280",
+      webUrl: undefined,
+    },
+    {
+      id: "hyppe",
+      image: "https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw",
+      title: "Hyppe",
+      description: "Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en",
+      appStoreUrl: "https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684",
+      webUrl: undefined,
+    },
+  ]
+
+  // Filter projects based on URLs
+  const mobileProjects = allProjects.filter(p => p.playStoreUrl || p.appStoreUrl)
+  const webProjects = allProjects.filter(p => p.webUrl)
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -269,148 +332,37 @@ export default function Portfolio() {
                 <TabsTrigger value="mobile">Mobile</TabsTrigger>
                 <TabsTrigger value="web">Web</TabsTrigger>
               </TabsList>
+              
+              {/* All Projects Tab */}
               <TabsContent value="all" className="mt-8">
                 <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {/* Mobile Project 1 */}
-                  <ProjectCard
-                    id="jogjalowker"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
-                    title="Jogjalowker"
-                    description="JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies."
-                    playStoreUrl="https://play.google.com/store/apps/details?id=id.co.jogjalowker"
-                    appStoreUrl="https://apps.apple.com/id/app/jogjalowker/id1451701919"
-                  />
-
-                  {/* Mobile Project 2 */}
-                  <ProjectCard
-                    id="charo"
-                    type="mobile"
-                    image="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
-                    title="Charo - AI Dating Assistant"
-                    description="Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots."
-                    appStoreUrl="https://apps.apple.com/id/app/charo/id6670252822"
-                  />
-
-                  {/* Mobile Project 3 */}
-                  <ProjectCard
-                    id="tracegrid"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
-                    title="Tracegrid Mobile"
-                    description="TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions."
-                    playStoreUrl="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en"
-                    appStoreUrl="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id"
-                  />
-
-                  {/* Mobile Project 4 */}
-                  <ProjectCard
-                    id="btp"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw"
-                    title="BTP Ranger"
-                    description="BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package"
-                    playStoreUrl="https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en"
-                    appStoreUrl="https://apps.apple.com/us/app/btp-ranger/id1546573869"
-                  />
-
-                  {/* Mobile Project 5 */}
-                  <ProjectCard
-                    id="gamaaims"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw"
-                    title="Gama AIMS"
-                    description="GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance"
-                    playStoreUrl="https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en"
-                    appStoreUrl="https://apps.apple.com/id/app/gama-aims/id1616273280"
-                  />
-
-                  {/* Mobile Project 6 */}
-                  <ProjectCard
-                    id="hyppe"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw"
-                    title="Hyppe"
-                    description="Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package."
-                    playStoreUrl="https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en"
-                    appStoreUrl="https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684"
-                  />
+                  {allProjects.map((project) => (
+                    <ProjectCard key={project.id} {...project} />
+                  ))}
                 </div>
               </TabsContent>
+              
+              {/* Mobile Projects Tab */}
               <TabsContent value="mobile" className="mt-8">
                 <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {/* Mobile Project 1 */}
-                  <ProjectCard
-                    id="jogjalowker"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/3NzYKqbgrrlFzR-iiOCFC4hlOjNIurQx2wkjU3K0hS3aFkzDwlUob_VkJVekRlrYCSGS=w480-h960-rw"
-                    title="Jogjalowker"
-                    description="JogjaLowker is the leading job vacancy information portal in Jogja, with hundreds of thousands of job seekers and collaborations with thousands of companies."
-                    playStoreUrl="https://play.google.com/store/apps/details?id=id.co.jogjalowker"
-                    appStoreUrl="https://apps.apple.com/id/app/jogjalowker/id1451701919"
-                  />
-
-                  {/* Mobile Project 2 */}
-                  <ProjectCard
-                    id="charo"
-                    type="mobile"
-                    image="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/56/ea/76/56ea767d-57c8-ce41-1206-3f3ab79b0824/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp"
-                    title="Charo - AI Dating Assistant"
-                    description="Charo is a French AI-driven dating assistant providing auto-generated tips and advice based on user conversation screenshots."
-                    appStoreUrl="https://apps.apple.com/id/app/charo/id6670252822"
-                  />
-
-                  {/* Mobile Project 3 */}
-                  <ProjectCard
-                    id="tracegrid"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw"
-                    title="Tracegrid Mobile"
-                    description="TraceGrid is a fleet management app that enables real-time tracking of vehicle locations, fuel usage, tachograph data, and fleet statistics. It helps users monitor operations efficiently and make informed decisions."
-                    playStoreUrl="https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en"
-                    appStoreUrl="https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id"
-                  />
-
-                  {/* Mobile Project 4 */}
-                  <ProjectCard
-                    id="btp"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/m_XSMTTOwJV5h99isOxEnqkfP8cs0PjfpVYJa4IYQoElQ6cmqqBfxBMyvs9tAMDRiSw=w480-h960-rw"
-                    title="BTP Ranger"
-                    description="BTP Ranger helps parents monitor their children's activities in school. I worked on Firebase integration, real-time updates, and ensured smooth data handling using the Provider package"
-                    playStoreUrl="https://play.google.com/store/apps/details?id=sg.com.bythepark.ranger&hl=en"
-                    appStoreUrl="https://apps.apple.com/us/app/btp-ranger/id1546573869"
-                  />
-
-                  {/* Mobile Project 5 */}
-                  <ProjectCard
-                    id="gamaaims"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw"
-                    title="Gama AIMS"
-                    description="GAMA-AIMS is a psychiatric intervention app for medical students dealing with anxiety. I was responsible for implementing the mental health intervention features and managing user sessions with Provider for optimal performance"
-                    playStoreUrl="https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en"
-                    appStoreUrl="https://apps.apple.com/id/app/gama-aims/id1616273280"
-                  />
-
-                  {/* Mobile Project 6 */}
-                  <ProjectCard
-                    id="hyppe"
-                    type="mobile"
-                    image="https://play-lh.googleusercontent.com/l6gCAxSr5Dzz3jS-VknF3210JI6wjwmzwTef9He68WW7o7jQBypSezOWAEgodPckn763=w480-h960-rw"
-                    title="Hyppe"
-                    description="Hyppe is a local social media platform that offers a new way for urban youth to share their moments. I contributed by integrating AR features and managing state using the Provider package."
-                    playStoreUrl="https://play.google.com/store/apps/details?id=com.hyppe.hyppeapp&hl=en"
-                    appStoreUrl="https://apps.apple.com/id/app/hyppe-indonesia-social-media/id1545595684"
-                  />
+                  {mobileProjects.map((project) => (
+                    <ProjectCard key={project.id} {...project} />
+                  ))}
                 </div>
               </TabsContent>
+              
+              {/* Web Projects Tab */}
               <TabsContent value="web" className="mt-8">
                 <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {/* Web projects will be added here */}
-                  <div className="col-span-full text-center py-12">
-                    <p className="text-muted-foreground text-lg">Web projects coming soon...</p>
-                  </div>
+                  {webProjects.length > 0 ? (
+                    webProjects.map((project) => (
+                      <ProjectCard key={project.id} {...project} />
+                    ))
+                  ) : (
+                    <div className="col-span-full text-center py-12">
+                      <p className="text-muted-foreground text-lg">Web projects coming soon...</p>
+                    </div>
+                  )}
                 </div>
               </TabsContent>
             </Tabs>
