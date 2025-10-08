@@ -5,8 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { Mail, Github, Linkedin, ChevronRight } from "lucide-react"
 
-import { Button } from "../components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import ProjectCard from "../components/project-card"
 import ContactForm from "../components/contact-form"
@@ -35,6 +33,15 @@ export default function Portfolio() {
       webUrl: undefined,
     },
     {
+      id: "surabayakarir",
+      image: "https://play-lh.googleusercontent.com/vSD_o_AlJRa2nDPnHdlMZzfo40qGLwyNmLj0oOnFweCNkku0C3G4udd4hAt5fq_TEPjZ=w480-h960-rw",
+      title: "Surabaya Karir",
+      description: "Surabaya Karir is the most popular online job vacancy information portal in Surabaya, Sidoarjo and surrounding areas, with thousands of employers and job seekers collaborating on the platform.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=id.co.surabayakarir",
+      appStoreUrl: "https://apps.apple.com/id/app/surabaya-karir/id6479258923",
+      webUrl: "https://surabayakarir.co.id/",
+    },
+    {
       id: "tracegrid",
       image: "https://play-lh.googleusercontent.com/HRgLFqVMaht90gwkDmn5r9pvbGqBUu8vomtXz8mUFoSeG4ondFo1Obd1dtf55z3BIw8=w480-h960-rw",
       title: "Tracegrid Mobile",
@@ -42,6 +49,15 @@ export default function Portfolio() {
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.tracegrid.app.mobile&hl=en",
       appStoreUrl: "https://apps.apple.com/id/app/tracegrid-mobile/id1071231716?l=id",
       webUrl: undefined,
+    },
+    {
+      id: "divapress",
+      image: "https://divapress-online.com/Assets/fo/img/logo-divapress.png",
+      title: "Divapress Online",
+      description: "Divapress Online is a comprehensive online bookstore and publishing platform offering the latest books, bestsellers, and ebook publishing services with the tagline 'Menulis, Membaca, Mengubah Dunia!' (Write, Read, Change the World!).",
+      playStoreUrl: undefined,
+      appStoreUrl: undefined,
+      webUrl: "https://divapress-online.com/",
     },
     {
       id: "btp",
@@ -53,6 +69,15 @@ export default function Portfolio() {
       webUrl: undefined,
     },
     {
+      id: "diomedia",
+      image: "https://diomedia.id/wp-content/uploads/2022/08/Logo-Diomedia-Baru-1.png",
+      title: "Diomedia",
+      description: "Diomedia is a book publishing platform with the philosophy 'Menerbitkan Buku adalah Kemewahan Intelektual!' (Publishing Books is an Intellectual Luxury!), specializing in children's books, academic writing programs, and various literary works.",
+      playStoreUrl: undefined,
+      appStoreUrl: undefined,
+      webUrl: "https://diomedia.id/",
+    },
+    {
       id: "gamaaims",
       image: "https://play-lh.googleusercontent.com/TaXMTWe5Aqzf6AwaAQq9wxZasAEzpWaZG3xNH5h5m_CwrB8jXBtLmOh096y_K_xyM8U9=w480-h960-rw",
       title: "Gama AIMS",
@@ -60,6 +85,15 @@ export default function Portfolio() {
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.gamaaims.app&hl=en",
       appStoreUrl: "https://apps.apple.com/id/app/gama-aims/id1616273280",
       webUrl: undefined,
+    },
+    {
+      id: "cantrikpustaka",
+      image: "https://cantrikpustaka.com/wp-content/uploads/2021/11/logo-web.png",
+      title: "Cantrik Pustaka",
+      description: "Cantrik Pustaka is a book publisher specializing in academic and literary works, covering topics from philosophy, religion, sociology, to cultural studies and fiction, serving as a platform for intellectual discourse and knowledge dissemination.",
+      playStoreUrl: undefined,
+      appStoreUrl: undefined,
+      webUrl: "https://cantrikpustaka.com/",
     },
     {
       id: "hyppe",
@@ -329,8 +363,8 @@ export default function Portfolio() {
             <Tabs defaultValue="all" className="w-full py-12" onValueChange={setActiveTab}>
               <TabsList className="grid w-full max-w-md mx-auto grid-cols-3">
                 <TabsTrigger value="all">All</TabsTrigger>
-                <TabsTrigger value="mobile">Mobile</TabsTrigger>
                 <TabsTrigger value="web">Web</TabsTrigger>
+                <TabsTrigger value="mobile">Mobile</TabsTrigger>
               </TabsList>
               
               {/* All Projects Tab */}
