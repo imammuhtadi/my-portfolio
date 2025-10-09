@@ -10,7 +10,7 @@ export const translations = {
 
     // About Section
     about: {
-      title: "Mengenal Saya",
+      title: "Tentang Saya",
       intro:
         "Perkenalkan, saya Muhtadi. Saya adalah <b>FullStack Developer</b> yang fokus membangun <b>solusi digital berbasis web dan mobile</b>. Berbekal pengalaman mendalam dalam ekosistem teknologi terkini, saya menciptakan produk digital berkualitas tinggi yang memberikan dampak nyata bagi pengguna di berbagai perangkat.",
       experience: {
