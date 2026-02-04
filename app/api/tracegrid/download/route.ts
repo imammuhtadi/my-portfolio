@@ -52,8 +52,10 @@ export async function GET(request: NextRequest) {
 
     console.log("✅ File read successfully");
     console.log("🚀 Starting file transfer...");
+    console.log(`📏 Setting Content-Length: ${fileSize} bytes`);
 
-    const response = new NextResponse(fileBuffer, {
+    // Use native Response to avoid chunked encoding
+    const response = new Response(fileBuffer, {
       status: 200,
       headers: {
         "Content-Type": "application/vnd.android.package-archive",
