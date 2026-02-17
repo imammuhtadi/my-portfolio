@@ -32,8 +32,8 @@ export async function GET() {
   }
 
   const versionData = {
-    version: "1.0.2",
-    versionCode: 3,
+    version: "1.0.3",
+    versionCode: 4,
     releaseDate: "2025-01-29",
     downloadUrl: "https://muhtadi.dev/api/tracegrid/download",
     changelog: ["Initial release", "Basic functionality implemented"],
